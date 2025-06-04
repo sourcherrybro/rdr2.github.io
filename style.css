@@ -1,0 +1,599 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+header img:hover {
+    opacity: 1;
+
+}
+.no-bg-link {
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: #9b0909 !important;
+    font-size:13.5px!important;
+}
+
+.no-bg-link:hover {
+    background: none !important;
+    color: #dd1919 !important;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(80, 29, 29, 0.85), rgba(49, 0, 0, 0.85)),
+        url('img/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content p {
+    margin-bottom: 22px; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 0;
+    text-align: justify;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px auto;
+    margin-bottom:0;
+    max-width: 950px;
+    background: rgba(30, 0, 0, 0.7);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+.intro-container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:30px auto;
+    margin-top:0px;
+    max-width: 950px;
+    background: rgba(30, 0, 0, 0.7);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+.intro-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.intro-text blockquote {
+    border-left: 4px solid rgb(142, 152, 160);
+    padding-left: 16px;
+    font-style: italic;
+}
+
+.intro-text {
+    flex: 2 1 320px;
+    color: #c9c9c9;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:13.5px;
+    text-align:justify;
+}
+
+.intro-image img {
+    max-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+
+
+.main-nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgba(48, 15, 15, 0.85); /* fundal pentru fiecare buton */
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(30, 0, 0, 0.7);;
+}
+
+.main-nav a:hover {
+    background: #b22222;
+    color: #fff;
+    
+}.content-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "main aside"
+    "gameplay gameplay";
+    gap: 20px;
+    max-width: 1100px;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 2;
+    color: #c9c9c9;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:13.5px;
+    text-align:justify;
+    
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    
+}
+
+.main-content blockquote {
+    border-left: 4px solid #b22222;
+    padding-left: 16px;
+    font-style: italic;
+    color: #ddd;
+ 
+}
+
+.side-info {
+    flex: 1;
+    min-width: 270px;
+    margin-bottom:40px;
+}
+
+.cover-box {
+    background: rgba(30, 0, 0, 0.85);
+    border-radius: 12px;
+    padding: 0px;
+    text-align: center;
+    color:white;    
+    box-shadow: 0 2px 12px rgba(78, 3, 3, 0.7);
+    overflow: hidden;
+    border-left: 1px solid #710000;
+    border-right: 1px solid #710000;
+    border-top: 1px solid #710000;
+    border-bottom: 1px solid #710000;
+}
+
+.intro-img img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    display: block;
+}
+
+.intro-img2 img {
+    width: 100%;
+    max-width: 150%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    display: block;
+    margin: 0 auto;
+}
+
+.intro-img2 h2{
+    color: #bbb5b5;
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.intro-img h1{
+    color: #bbb5b5;
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.7s cubic-bezier(.25,.8,.25,1);
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.cover-img-zoom {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.cover-img-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.7s cubic-bezier(.25,.8,.25,1);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cover-img-zoom:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.game-details {
+    color:rgb(225, 196, 92);
+    font-size: 11.7px;
+    text-align: left;
+    margin-top: 8px;
+    display: table;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.game-details div {
+    display: table-row;
+}
+
+.game-details div > strong,
+.game-details div > span,
+.game-details div > a {
+    display: table-cell;
+    padding: 10px 0 10px 10px; /* padding doar la stânga pentru titlu */
+    border-bottom: 1px solid #710000;
+    font-weight: bold;
+    width: 1px; /* ca să nu lase spațiu suplimentar */
+}
+
+.game-details div > span,
+.game-details div > a {
+    display: table-cell;
+    padding: 10px 0 10px 12px; /* padding doar la stânga pentru valoare */
+    border-bottom: 1px solid #710000;
+    font-weight: normal;
+}
+
+.game-details div:last-child > strong,
+.game-details div:last-child > span,
+.game-details div:last-child > a {
+    border-bottom: none;
+}
+
+
+
+.wiki-section {
+    max-width: 1100px;
+    margin: -70px auto 0 auto;
+    padding: 4px;
+    background:none;
+    text-align: justify;
+    grid-area:gameplay;
+}
+
+.wiki-section img {
+    max-width: 50%;
+    object-position: center center;
+    position: relative;
+    display: block;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    margin-bottom: 16px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.wiki-section h2{
+    max-width: 1100px;
+    margin: 0px auto 0 auto;
+    padding: 4px;
+    background:none;
+    text-align: justify;
+    grid-area:gameplay;
+    border-bottom: 2px solid rgb(234, 71, 71);
+}
+.wiki-section p {
+    color: #c9c9c9;
+}
+
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.logo-img {
+  height: 200px;
+  /* elimină marginile și centrările inline */
+}
+
+.reception-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+
+}
+.reception-text {
+  flex: 1 0 340px;
+  min-width: 280px;
+  margin-bottom:-3px;
+}
+.reception-table {
+  flex: 1 1 170px;
+  min-width: 180px;
+  background: #440d0d;
+  color: #ffe3e3;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: -3px;
+  overflow: hidden;
+
+}
+.reception-table th,
+.reception-table td {
+  border: 1px solid #823f3f;
+  padding:  8px 14px;
+  text-align: center;
+
+}
+.reception-table th {
+  background: #6e1a1a;
+  color: #fff;
+}
+
+.trailers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.trailer-box {
+  background: transparent;
+  border-radius: 12px;
+  margin-top:15px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trailer-box h4 {
+  color: rgb(195, 185, 185);
+  margin-bottom: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+.trailer-box iframe {
+  border-radius: 8px;
+  max-width: 360px;
+  height: 191px;
+}
+
+
+#missions-list-ch1 ul,
+#missions-list-ch2 ul,
+#missions-list-ch3 ul,
+#missions-list-ch4 ul,
+#missions-list-ch5 ul,
+#missions-list-ch6 ul,
+#missions-list-ch7 ul,
+#missions-list-ch8 ul,
+#missions-list ul {
+    list-style: decimal;
+    padding-left: 24px;
+    margin: 16px 0;
+    display: block;
+}
+
+#missions-list-ch1 li,
+#missions-list-ch2 li,
+#missions-list-ch3 li,
+#missions-list-ch4 li,
+#missions-list-ch5 li,
+#missions-list-ch6 li,
+#missions-list-ch7 li,
+#missions-list-ch8 li,
+#missions-list li {
+    display: list-item;
+    background: none !important;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 6px;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#missions-list-ch1 a,
+#missions-list-ch2 a,
+#missions-list-ch3 a,
+#missions-list-ch4 a,
+#missions-list-ch5 a,
+#missions-list-ch6 a,
+#missions-list-ch7 a,
+#missions-list-ch8 a,
+#missions-list a {
+    color: #9b0909;
+    font-size: inherit;
+    font-weight: normal;
+    background: none !important;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+#missions-list-ch1 a:hover,
+#missions-list-ch2 a:hover,
+#missions-list-ch3 a:hover,
+#missions-list-ch4 a:hover,
+#missions-list-ch5 a:hover,
+#missions-list-ch6 a:hover,
+#missions-list-ch7 a:hover,
+#missions-list-ch8 a:hover,
+#missions-list a:hover {
+    color: #dd1919;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.protagonists-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    overflow: hidden;
+}
+.protagonists-table th, .protagonists-table td {
+    border: 1px solid #a55;
+    padding: 14px 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.protagonists-table th {
+    background: #3a1818;
+    color: #ffd5d5;
+    font-size: 1.1em;
+}
+.protagonists-table tr:nth-child(even) {
+    background: rgba(120, 30, 30, 0.18);
+}
+
+.gang-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    overflow: hidden;
+}
+.gang-table th, .gang-table td {
+    border: 1px solid #a55;
+    padding: 14px 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.gang-table th {
+    background: #3a1818;
+    color: #ffd5d5;
+    font-size: 1.1em;
+}
+.gang-table tr:nth-child(even) {
+    background: rgba(120, 30, 30, 0.18);
+}
+
+.protagonists-table td:nth-child(2),
+.gang-table td:nth-child(2) {
+    width: 180px;
+    min-width: 140px;
+    max-width: 220px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.gang-table img[alt="Sadie Adler"] {
+    filter: brightness(1.88);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin: 32px auto;
+    max-width: 1200px;
+    padding: 0 16px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #000a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery-grid img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 32px #000c;
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(20,0,0,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 14px;
+    box-shadow: 0 4px 32px #000c;
+}
+.lightbox-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    text-shadow: 0 2px 12px #000;
+    transition: color 0.2s;
+}
+.lightbox-close:hover {
+    color: #ffb3b3;
+}

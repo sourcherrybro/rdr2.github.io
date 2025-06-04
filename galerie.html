@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Red Dead Redemption 2 Wiki | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Poți adăuga aici link-uri către fișiere CSS sau scripturi JS -->
+</head>
+<div id="lightbox" class="lightbox" style="display:none;">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+<body>
+    <header>
+        <img src="img/a.png" alt="Red Dead Redemption 2 Wiki Logo" style="height:120px">
+    </header>
+<main>
+    <nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personaje.html">Characters</a></li>
+        <li><a href="misiuni.html">Missions</a></li>
+        <li><a href="galerie.html">Gallery</a></li>
+    </ul>
+    <div class="gallery-grid">
+    <img src="img/1.jpg" alt="Arthur Morgan">
+    <img src="img/2.jpg" alt="John Marston">
+    <img src="img/3.jpg" alt="Dutch van der Linde">
+    <img src="img/4.jpg" alt="Sadie Adler">
+    <img src="img/5.jpg" alt="Micah Bell">
+    <img src="img/6.jpg" alt="Charles Smith">
+    <img src="img/7.jpg" alt="Hosea Matthews">
+    <img src="img/8.jpg" alt="Bill Williamson">
+    <img src="img/9.jpg" alt="Lenny Summers">
+    <img src="img/10.jpg" alt="Jack Marston">
+    <img src="img/11.jpg" alt="Uncle">
+    <img src="img/12.jpg" alt="Tilly Jackson">
+    <img src="img/13.jpg" alt="Karen Jones">
+    <img src="img/14.jpg" alt="Mary-Beth Gaskill">
+    <img src="img/15.jpg" alt="Pearson">
+    <img src="img/16.jpg" alt="Leopold Strauss">
+    <img src="img/17.jpg" alt="Reverend Swanson">
+    <img src="img/18.jpg" alt="Sean MacGuire">
+    <!-- Adaugă mai multe imagini după preferință -->
+  </div>
+</main>
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" style="display:none;">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+<script>
+document.querySelectorAll('.gallery-grid img').forEach(img => {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = this.src;
+    document.getElementById('lightbox').style.display = 'flex';
+  });
+});
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.getElementById('lightbox-img').src = '';
+}
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+</script>
+</body>
+</html>
